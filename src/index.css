@@ -1,13 +1,93 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  color: #2b2b2b;
+  font-family: 'Space Mono' -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: goldenrod;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
+  width: 600px;
+  height: 70vh;
+  background-color: gold;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.preview {
+  border: 3px dashed black;
+  overflow: auto;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  overflow-x: hidden;
+
+}
+
+.help {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  user-select: none;
+  font-size: 28px;
+  font-weight: bolder;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.block::-webkit-scrollbar,
+textarea::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+.block::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.block::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb
+ {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.helpActivated {
+  border: 3px solid black;
 }
